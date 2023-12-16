@@ -22,6 +22,8 @@
     import { listen } from "@tauri-apps/api/event";
     import DirectorySelectorSetting from "../settings/DirectorySelectorSetting.svelte";
     import FileSelectorSetting from "../settings/FileSelectorSetting.svelte";
+    import CustomModSetting from "../settings/CustomModSetting.svelte";
+    import IconButtonSetting from "../settings/IconButtonSetting.svelte";
 
     export let options;
 
@@ -258,6 +260,15 @@
                 {/if}
 
             {/each}
+        </SettingWrapper>
+        <SettingWrapper title="Additional mods for nextgen-1.20.4">
+            <div slot="title-element">
+                <IconButtonSetting text="Install" icon="icon-plus"></IconButtonSetting>
+            </div>
+            <CustomModSetting title="Iris" value={true}></CustomModSetting>
+            <CustomModSetting title="Classy Creepers" value={true}></CustomModSetting>
+            <CustomModSetting title="Axolotl" value={false}></CustomModSetting>
+            <CustomModSetting title="Advanced Snek" value={true}></CustomModSetting>
         </SettingWrapper>
     </SettingsContainer>
 {/if}
