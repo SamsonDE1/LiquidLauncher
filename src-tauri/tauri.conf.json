@@ -7,7 +7,7 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "liquidlauncher",
+    "productName": "LiquidLauncher",
     "version": "0.2.0"
   },
   "tauri": {
