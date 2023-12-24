@@ -67,16 +67,16 @@ jobs:
         if: matrix.platform == 'ubuntu-latest'
         with:
           name: liquidlauncher-deb-linux
-          path: ./src-tauri/target/release/bundle/deb/liquidlauncher_**.deb
+          path: ./src-tauri/target/release/bundle/deb/liquid-launcher_**.deb
 
       - uses: actions/upload-artifact@v3
         if: matrix.platform == 'windows-latest'
         with:
           name: liquidlauncher-windows
-          path: ./src-tauri/target/release/bundle/msi/liquidlauncher_**.msi.*
+          path: ./src-tauri/target/release/bundle/msi/liquid-launcher_**.msi.*
 
       - uses: actions/upload-artifact@v3
         if: matrix.platform == 'macos-latest'
         with:
           name: liquidlauncher-macos
-          path: ./src-tauri/target/release/bundle/macos/liquidlauncher.app.tar.*
+          path: ./src-tauri/target/release/bundle/macos/liquid-launcher.app.tar.*
