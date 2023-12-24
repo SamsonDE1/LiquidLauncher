@@ -79,4 +79,4 @@ jobs:
         if: matrix.platform == 'macos-latest'
         with:
           name: liquidlauncher-macos
-          path: ./src-tauri/target/release/bundle/macos/liquid-launcher.app.tar.*
+          path: ./src-tauri/target/release/bundle/macos/liquidlauncher.app.tar.*
